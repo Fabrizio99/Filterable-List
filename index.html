@@ -4,53 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>My contacts</title>
-
 </head>
 <body>
     <div class="container">
         <h1 class="center-align">My Contacts</h1>
+        <form action="#" class="col s12" id="contactForm">
+            <div class="input-field col s6">
+                    <input type="text" class="validate" id="contactInput">
+                    <label for="contactInput">Add Contact</label>
+            </div>
+            <button type="submit" class="btn waves-effect disabled" id="buttonSubmit">Add</button>
+        </form>
+        <br>
         <input type="text" name="" id="filterInput" placeholder="Search names">
-        <ul id="names" class="collection with-header">
-            <li class="collection-header">
-                <h5>A</h5>
-            </li>
-            <li class="collection-item">
-                <a href="#">Alberto</a>
-            </li>
-            <li class="collection-item">
-                <a href="#">Alvaro</a>
-            </li>
-            <li class="collection-item">
-                <a href="#">Annie</a>
-            </li>
-            <li class="collection-header">
-                <h5>B</h5>
-            </li>
-            <li class="collection-item">
-                <a href="#">Beto</a>
-            </li>
-            <li class="collection-item">
-                <a href="#">Bob</a>
-            </li>
-            <li class="collection-item">
-                <a href="#">Bruno</a>
-            </li>
-            <li class="collection-header">
-                <h5>C</h5>
-            </li>
-            <li class="collection-item">
-                <a href="#">Carla</a>
-            </li>
-            <li class="collection-item">
-                <a href="#">Carmen</a>
-            </li>
-            <li class="collection-item">
-                <a href="#">Cesar</a>
-            </li>
+        <ul id="contactContainer" class="collection with-header">            
         </ul>
     </div>
+    <template id="structure">
+        <li class="collection-header">
+            <h5></h5>
+        </li>
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
