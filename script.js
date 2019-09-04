@@ -1,7 +1,7 @@
 const filterInput = document.getElementById('filterInput')
 
 filterInput.addEventListener('keyup',(keyboardEvent)=>{
-    const filterValue = keyboardEvent.target.value.toUpperCase()
+    const filterValue = keyboardEvent.target.value.toUpperCase().trim()
     const ul = document.getElementById('names')
     const li = Array.from(ul.querySelectorAll('li.collection-item'))
     
